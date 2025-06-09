@@ -8,4 +8,5 @@ git clone https://github.com/Krastinator/android_kernel_xiaomi_apollo -b main ke
 git clone https://github.com/Krastinator/hardware_xiaomi -b fifteen hardware/xiaomi && \
 . build/envsetup.sh && \
 breakfast apollo user && \
+make installclean && \
 mka bacon
