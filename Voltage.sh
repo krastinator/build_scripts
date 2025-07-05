@@ -1,7 +1,7 @@
 #! /bin/bash
 
 rm -rf .repo/local_manifests; \
-repo init --depth=1 --no-repo-verify -u https://github.com/VoltageOS-staging/manifest -b 16 --git-lfs -g default,-mips,-darwin,-notdefault && \
+repo init --depth=1 --no-repo-verify -u https://github.com/VoltageOS/manifest -b 15-qp2 --git-lfs -g default,-mips,-darwin,-notdefault && \
 /opt/crave/resync.sh && \
 rm -rf device/xiaomi; \
 git clone https://github.com/MurtazaKolachi/android_device_xiaomi_apollo -b voltage device/xiaomi/apollo && \
